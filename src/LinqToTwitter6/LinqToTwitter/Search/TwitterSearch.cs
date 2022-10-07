@@ -21,52 +21,52 @@ namespace LinqToTwitter
         /// type of search, included for compatibility
         /// with other APIs
         /// </summary>
-        public SearchType Type { get; init; }
+        public SearchType Type { get; set; }
 
         /// <summary>
         /// Date/Time to search to
         /// </summary>
-        public DateTime EndTime { get; init; }
+        public DateTime EndTime { get; set; }
 
         /// <summary>
         /// Comma-separated list of expansion fields
         /// </summary>
-        public string? Expansions { get; init; }
+        public string? Expansions { get; set; }
 
         /// <summary>
         /// Maximum number of tweets to return
         /// </summary>
-        public int MaxResults { get; init; }
+        public int MaxResults { get; set; }
 
         /// <summary>
         /// Comma-separated list of fields to return in the media object
         /// </summary>
-        public string? MediaFields { get; init; }
+        public string? MediaFields { get; set; }
 
         /// <summary>
         /// Provide this, when paging, to get the next page of results
         /// </summary>
-        public string? NextToken { get; init; }
+        public string? NextToken { get; set; }
 
         /// <summary>
         /// Comma-separated list of fields to return in the place object
         /// </summary>
-        public string? PlaceFields { get; init; }
+        public string? PlaceFields { get; set; }
 
         /// <summary>
         /// Comma-separated list of fields to return in the poll object
         /// </summary>
-        public string? PollFields { get; init; }
+        public string? PollFields { get; set; }
 
         /// <summary>
         /// search query
         /// </summary>
-        public string? Query { get; init; }
+        public string? Query { get; set; }
 
         /// <summary>
         /// Return tweets whose IDs are greater than this
         /// </summary>
-        public string? SinceID { get; init; }
+        public string? SinceID { get; set; }
 
         /// <summary>
         /// Order to return tweets
@@ -76,22 +76,22 @@ namespace LinqToTwitter
         /// <summary>
         /// Date/Time to start search
         /// </summary>
-        public DateTime StartTime { get; init; }
+        public DateTime StartTime { get; set; }
 
         /// <summary>
         /// Comma-separated list of fields to return in the Tweet object
         /// </summary>
-        public string? TweetFields { get; init; }
+        public string? TweetFields { get; set; }
 
         /// <summary>
         /// Return tweets whose ids are less than this
         /// </summary>
-        public string? UntilID { get; init; }
+        public string? UntilID { get; set; }
 
         /// <summary>
         /// Comma-separated list of fields to return in the User object
         /// </summary>
-        public string? UserFields { get; init; }
+        public string? UserFields { get; set; }
 
         //
         // Output results
@@ -101,13 +101,13 @@ namespace LinqToTwitter
         /// Tweet data returned from the search
         /// </summary>
         [JsonPropertyName("data")]
-        public List<Tweet>? Tweets { get; init; }
+        public List<Tweet>? Tweets { get; set; }
 
         /// <summary>
         /// If any errors occur, they'll show up here
         /// </summary>
         [JsonPropertyName("errors")]
-        public List<TwitterError>? Errors { get; init; }
+        public List<TwitterError>? Errors { get; set; }
 
         /// <summary>
         /// Were there errors?
@@ -118,12 +118,12 @@ namespace LinqToTwitter
         /// Populated when query includes expansion fields
         /// </summary>
         [JsonPropertyName("includes")]
-        public TwitterInclude? Includes { get; init; }
+        public TwitterInclude? Includes { get; set; }
 
         /// <summary>
         /// Tweet metadata returned from search
         /// </summary>
         [JsonPropertyName("meta")]
-        public TwitterSearchMeta? Meta { get; init; }
+        public TwitterSearchMeta? Meta { get; set; }
     }
 }

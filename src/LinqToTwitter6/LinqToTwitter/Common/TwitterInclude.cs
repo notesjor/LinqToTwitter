@@ -6,18 +6,18 @@ namespace LinqToTwitter.Common
     public class TwitterInclude
     {
         [JsonPropertyName("users")]
-        public List<TwitterUser>? Users { get; init; }
+        public List<TwitterUser>? Users { get; set; }
 
         [JsonPropertyName("tweets")]
-        public List<Tweet>? Tweets { get; init; }
+        public List<Tweet>? Tweets { get; set; }
 
         [JsonPropertyName("places")]
-        public List<TwitterPlace>? Places { get; init; }
+        public List<TwitterPlace>? Places { get; set; }
 
         [JsonPropertyName("polls")]
-        public List<TwitterPoll>? Polls { get; init; }
+        public List<TwitterPoll>? Polls { get; set; }
 
         [JsonPropertyName("media")]
-        public List<TwitterMedia>? Media { get; init; }
+        public List<TwitterMedia>? Media { get; set; }
     }
 }

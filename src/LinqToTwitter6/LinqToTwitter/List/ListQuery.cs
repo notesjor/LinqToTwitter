@@ -62,7 +62,7 @@ namespace LinqToTwitter
         /// </summary>
         [JsonConverter(typeof(ListConverter))]
         [JsonPropertyName("data")]
-        public List<List>? Lists { get; init; }
+        public List<List>? Lists { get; set; }
 
         /// <summary>
         /// Include data, depends on query

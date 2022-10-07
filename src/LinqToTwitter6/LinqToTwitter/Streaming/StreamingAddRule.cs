@@ -11,13 +11,13 @@ namespace LinqToTwitter
         /// Rule text
         /// </summary>
         [JsonPropertyName("value")]
-        public string? Value { get; init; }
+        public string? Value { get; set; }
 
         /// <summary>
         /// Rule tag
         /// </summary>
         [JsonPropertyName("tag")]
-        public string? Tag { get; init; }
+        public string? Tag { get; set; }
     }
 
 }

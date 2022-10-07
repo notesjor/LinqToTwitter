@@ -11,18 +11,18 @@ namespace LinqToTwitter
         /// Annotation ID
         /// </summary>
         [JsonPropertyName("id")]
-        public string? ID { get; init; }
+        public string? ID { get; set; }
 
         /// <summary>
         /// Annotation Name
         /// </summary>
         [JsonPropertyName("name")]
-        public string? Name { get; init; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// Annotation Description
         /// </summary>
         [JsonPropertyName("description")]
-        public string? Description { get; init; }
+        public string? Description { get; set; }
     }
 }

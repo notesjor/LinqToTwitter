@@ -11,7 +11,7 @@ namespace LinqToTwitter
         /// End of mention
         /// </summary>
         [JsonPropertyName("end")]
-        public int End { get; init; }
+        public int End { get; set; }
 
         /// <summary>
         /// ID of mentioned user
@@ -23,12 +23,12 @@ namespace LinqToTwitter
         /// Start of mention
         /// </summary>
         [JsonPropertyName("start")]
-        public int Start { get; init; }
+        public int Start { get; set; }
 
         /// <summary>
         /// Mentioned username
         /// </summary>
         [JsonPropertyName("username")]
-        public string? Username { get; init; }
+        public string? Username { get; set; }
     }
 }

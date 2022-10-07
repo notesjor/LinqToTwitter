@@ -11,24 +11,24 @@ namespace LinqToTwitter
         /// Number of people following the user
         /// </summary>
         [JsonPropertyName("followers_count")]
-        public int FollowersCount { get; init; }
+        public int FollowersCount { get; set; }
 
         /// <summary>
         /// Number of people user is following
         /// </summary>
         [JsonPropertyName("following_count")]
-        public int FollowingCount { get; init; }
+        public int FollowingCount { get; set; }
 
         /// <summary>
         /// Number of times user tweeted
         /// </summary>
         [JsonPropertyName("tweet_count")]
-        public int TweetCount { get; init; }
+        public int TweetCount { get; set; }
 
         /// <summary>
         /// Number of lists others have added this user to
         /// </summary>
         [JsonPropertyName("listed_count")]
-        public int ListedCount { get; init; }
+        public int ListedCount { get; set; }
     }
 }

@@ -12,18 +12,18 @@ namespace LinqToTwitter
         /// Urls in the profile description
         /// </summary>
         [JsonPropertyName("urls")]
-        public List<TweetEntityUrl>? Urls { get; init; }
+        public List<TweetEntityUrl>? Urls { get; set; }
 
         /// <summary>
         /// Hashtags in the profile description
         /// </summary>
         [JsonPropertyName("hashtags")]
-        public List<TweetEntityHashtag>? Hashtags { get; init; }
+        public List<TweetEntityHashtag>? Hashtags { get; set; }
 
         /// <summary>
         /// Mentions in the profile description
         /// </summary>
         [JsonPropertyName("mentions")]
-        public List<TweetEntityMention>? Mentions { get; init; }
+        public List<TweetEntityMention>? Mentions { get; set; }
     }
 }

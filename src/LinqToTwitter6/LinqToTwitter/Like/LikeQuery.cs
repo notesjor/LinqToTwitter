@@ -67,7 +67,7 @@ namespace LinqToTwitter
         /// Tweet data returned from the search
         /// </summary>
         [JsonPropertyName("data")]
-        public List<Tweet>? Tweets { get; init; }
+        public List<Tweet>? Tweets { get; set; }
 
         [JsonPropertyName("meta")]
         public LikeMeta? Meta { get; set; }

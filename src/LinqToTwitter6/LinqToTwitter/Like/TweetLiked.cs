@@ -5,6 +5,6 @@ namespace LinqToTwitter
     public class TweetLiked
     {
         [JsonPropertyName("liked")]
-        public bool Liked { get; init; }
+        public bool Liked { get; set; }
     }
 }

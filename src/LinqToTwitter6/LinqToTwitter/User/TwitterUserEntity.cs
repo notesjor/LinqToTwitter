@@ -11,12 +11,12 @@ namespace LinqToTwitter
         /// Entities from user profile URL
         /// </summary>
         [JsonPropertyName("url")]
-        public TwitterUserUrlEntities? Url { get; init; }
+        public TwitterUserUrlEntities? Url { get; set; }
 
         /// <summary>
         /// Entities from user profile description
         /// </summary>
         [JsonPropertyName("description")]
-        public TwitterUserDescriptionEntities? Description { get; init; }
+        public TwitterUserDescriptionEntities? Description { get; set; }
     }
 }

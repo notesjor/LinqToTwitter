@@ -15,13 +15,13 @@ namespace LinqToTwitter
         /// Tweet data returned from the search
         /// </summary>
         [JsonPropertyName("data")]
-        public TwitterUser? User { get; init; }
+        public TwitterUser? User { get; set; }
 
         /// <summary>
         /// If any errors occur, they'll show up here
         /// </summary>
         [JsonPropertyName("errors")]
-        public List<TwitterError>? Errors { get; init; }
+        public List<TwitterError>? Errors { get; set; }
 
         /// <summary>
         /// Were there errors?
@@ -32,6 +32,6 @@ namespace LinqToTwitter
         /// Populated when query includes expansion fields
         /// </summary>
         [JsonPropertyName("includes")]
-        public TwitterInclude? Includes { get; init; }
+        public TwitterInclude? Includes { get; set; }
     }
 }

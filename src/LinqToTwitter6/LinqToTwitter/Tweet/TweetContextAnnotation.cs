@@ -11,12 +11,12 @@ namespace LinqToTwitter
         /// Domain details
         /// </summary>
         [JsonPropertyName("domain")]
-        public TweetContextAnnotationDetails? Domain { get; init; }
+        public TweetContextAnnotationDetails? Domain { get; set; }
         
         /// <summary>
         /// Entity details
         /// </summary>
         [JsonPropertyName("entity")]
-        public TweetContextAnnotationDetails? Entity { get; init; }
+        public TweetContextAnnotationDetails? Entity { get; set; }
     }
 }

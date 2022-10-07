@@ -11,18 +11,18 @@ namespace LinqToTwitter
         /// Most recent ID in the data
         /// </summary>
         [JsonPropertyName("newest_id")]
-        public string? NewestID { get; init; }
+        public string? NewestID { get; set; }
 
         /// <summary>
         /// Oldest ID in the data
         /// </summary>
         [JsonPropertyName("oldest_id")]
-        public string? OldestID { get; init; }
+        public string? OldestID { get; set; }
 
         /// <summary>
         /// Number of results
         /// </summary>
         [JsonPropertyName("result_count")]
-        public int Count { get; init; }
+        public int Count { get; set; }
     }
 }

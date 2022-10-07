@@ -11,6 +11,6 @@ namespace LinqToTwitter
         /// Place ID for location of tweet
         /// </summary>
         [JsonPropertyName("place_id")]
-        public string? PlaceID { get; init; }
+        public string? PlaceID { get; set; }
     }
 }

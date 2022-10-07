@@ -68,13 +68,13 @@ namespace LinqToTwitter
         /// Space data returned from the search
         /// </summary>
         [JsonPropertyName("data")]
-        public List<Space>? Spaces { get; init; }
+        public List<Space>? Spaces { get; set; }
 
         /// <summary>
         /// Populated when query includes expansion fields
         /// </summary>
         [JsonPropertyName("includes")]
-        public TwitterInclude? Includes { get; init; }
+        public TwitterInclude? Includes { get; set; }
 
         /// <summary>
         /// Space metadata returned from search

@@ -5,6 +5,6 @@ namespace LinqToTwitter
     public class RetweetTweetID
     {
         [JsonPropertyName("tweet_id")]
-        public string? TweetID { get; init; }
+        public string? TweetID { get; set; }
     }
 }

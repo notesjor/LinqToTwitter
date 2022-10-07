@@ -10,13 +10,13 @@ namespace LinqToTwitter.Common
         /// Number of minutes to run poll
         /// </summary>
         [JsonPropertyName("duration_minutes")]
-        public int DurationMinutes { get; init; }
+        public int DurationMinutes { get; set; }
 
         /// <summary>
         /// When the poll ends
         /// </summary>
         [JsonPropertyName("end_datetime")]
-        public DateTime EndDateTime { get; init; }
+        public DateTime EndDateTime { get; set; }
 
         /// <summary>
         /// Poll ID
@@ -28,12 +28,12 @@ namespace LinqToTwitter.Common
         /// Poll options
         /// </summary>
         [JsonPropertyName("options")]
-        public List<TwitterPollOption>? Options { get; init; }
+        public List<TwitterPollOption>? Options { get; set; }
 
         /// <summary>
         /// Whether the poll is open or closed
         /// </summary>
         [JsonPropertyName("voting_status")]
-        public string? VotingStatus { get; init; }
+        public string? VotingStatus { get; set; }
     }
 }

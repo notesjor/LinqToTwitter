@@ -6,6 +6,6 @@ namespace LinqToTwitter
     public class DeleteIds
     {
         [JsonPropertyName("ids")]
-        public List<string>? Ids { get; init; }
+        public List<string>? Ids { get; set; }
     }
 }

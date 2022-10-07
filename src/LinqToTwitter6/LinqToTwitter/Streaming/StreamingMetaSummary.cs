@@ -11,24 +11,24 @@ namespace LinqToTwitter
         /// Number of rules created
         /// </summary>
         [JsonPropertyName("created")]
-        public int Created { get; init; }
+        public int Created { get; set; }
 
         /// <summary>
         /// Number of rules not created
         /// </summary>
         [JsonPropertyName("not_created")]
-        public int NotCreated { get; init; }
+        public int NotCreated { get; set; }
 
         /// <summary>
         /// Number of rules deleted
         /// </summary>
         [JsonPropertyName("deleted")]
-        public int Deleted { get; init; }
+        public int Deleted { get; set; }
 
         /// <summary>
         /// Number of rules not deleted
         /// </summary>
         [JsonPropertyName("not_deleted")]
-        public int NotDeleted { get; init; }
+        public int NotDeleted { get; set; }
     }
 }

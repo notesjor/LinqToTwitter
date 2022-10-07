@@ -12,7 +12,7 @@ namespace LinqToTwitter
         /// <summary>
         /// type of compliance job query
         /// </summary>
-        public ComplianceType Type { get; init; }
+        public ComplianceType Type { get; set; }
 
         /// <summary>
         /// ID for a single job query
@@ -27,7 +27,7 @@ namespace LinqToTwitter
         /// <summary>
         /// Comma-separated list of job statuses
         /// </summary>
-        public string? Status { get; init; }
+        public string? Status { get; set; }
 
         //
         // Output results
@@ -37,6 +37,6 @@ namespace LinqToTwitter
         /// Compliance job data returned from the search
         /// </summary>
         [JsonPropertyName("data")]
-        public List<ComplianceJob>? Jobs { get; init; }
+        public List<ComplianceJob>? Jobs { get; set; }
     }
 }

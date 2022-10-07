@@ -52,7 +52,7 @@ namespace LinqToTwitter
         /// Blocked user list
         /// </summary>
         [JsonPropertyName("data")]
-        public List<TwitterUser>? Users { get; init; }
+        public List<TwitterUser>? Users { get; set; }
 
         /// <summary>
         /// Result metadata

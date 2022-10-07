@@ -5,6 +5,6 @@ namespace LinqToTwitter
     public class TweetHideResponse
     {
         [JsonPropertyName("data")]
-        public TweetHidden? Data { get; init; }
+        public TweetHidden? Data { get; set; }
     }
 }

@@ -5,6 +5,6 @@ namespace LinqToTwitter
     public class DeleteStreamingFilterRules
     {
         [JsonPropertyName("delete")]
-        public DeleteIds? Delete { get; init; }
+        public DeleteIds? Delete { get; set; }
     }
 }

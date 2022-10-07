@@ -15,27 +15,27 @@ namespace LinqToTwitter
         /// type of search, included for compatibility
         /// with other APIs
         /// </summary>
-        public UserType Type { get; init; }
+        public UserType Type { get; set; }
 
         /// <summary>
         /// Required for id queries - Up to 100 comma-separated IDs to search for
         /// </summary>
-        public string? Ids { get; init; }
+        public string? Ids { get; set; }
 
         /// <summary>
         /// Required for username queries - Up to 100 comma-separated usernames to search for
         /// </summary>
-        public string? Usernames { get; init; }
+        public string? Usernames { get; set; }
 
         /// <summary>
         /// Comma-separated list of expansion fields
         /// </summary>
-        public string? Expansions { get; init; }
+        public string? Expansions { get; set; }
 
         /// <summary>
         /// User ID for following/follower queries
         /// </summary>
-        public string? ID { get; init; }
+        public string? ID { get; set; }
 
         /// <summary>
         /// ID for queries that need users associated with a list
@@ -45,7 +45,7 @@ namespace LinqToTwitter
         /// <summary>
         /// Max number of tweets to return per requrest - default 100 - possible 1000
         /// </summary>
-        public int MaxResults { get; init; }
+        public int MaxResults { get; set; }
 
         /// <summary>
         /// Comma-separated list of fields to return in the media object - <see cref="MediaField"/>
@@ -75,7 +75,7 @@ namespace LinqToTwitter
         /// <summary>
         /// Comma-separated list of fields to return in the Tweet object
         /// </summary>
-        public string? TweetFields { get; init; }
+        public string? TweetFields { get; set; }
 
         /// <summary>
         /// ID of tweet that users are associated with. e.g. users who liked a tweet
@@ -85,7 +85,7 @@ namespace LinqToTwitter
         /// <summary>
         /// Comma-separated list of fields to return in the User object
         /// </summary>
-        public string? UserFields { get; init; }
+        public string? UserFields { get; set; }
 
         //
         // Output results
@@ -95,13 +95,13 @@ namespace LinqToTwitter
         /// Tweet data returned from the search
         /// </summary>
         [JsonPropertyName("data")]
-        public List<TwitterUser>? Users { get; init; }
+        public List<TwitterUser>? Users { get; set; }
 
         /// <summary>
         /// If any errors occur, they'll show up here
         /// </summary>
         [JsonPropertyName("errors")]
-        public List<TwitterError>? Errors { get; init; }
+        public List<TwitterError>? Errors { get; set; }
 
         /// <summary>
         /// Were there errors?
@@ -112,6 +112,6 @@ namespace LinqToTwitter
         /// Populated when query includes expansion fields
         /// </summary>
         [JsonPropertyName("includes")]
-        public TwitterInclude? Includes { get; init; }
+        public TwitterInclude? Includes { get; set; }
     }
 }

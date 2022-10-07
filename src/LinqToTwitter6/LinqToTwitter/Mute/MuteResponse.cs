@@ -6,6 +6,6 @@ namespace LinqToTwitter
     public class MuteResponse
     {
         [JsonPropertyName("data")]
-        public MuteResponseData? Data { get; init; }
+        public MuteResponseData? Data { get; set; }
     }
 }

@@ -5,6 +5,6 @@ namespace LinqToTwitter
     public class BookmarkResponse
     {
         [JsonPropertyName("data")]
-        public TweetBookmarked? Data { get; init; }
+        public TweetBookmarked? Data { get; set; }
     }
 }

@@ -5,6 +5,6 @@ namespace LinqToTwitter
     public class RetweetResponse
     {
         [JsonPropertyName("data")]
-        public RetweetResponseData? Data { get; init; }
+        public RetweetResponseData? Data { get; set; }
     }
 }

@@ -6,9 +6,9 @@ namespace LinqToTwitter
     public class StreamTweet
     {
         [JsonPropertyName("data")]
-        public Tweet? Tweet { get; init; }
+        public Tweet? Tweet { get; set; }
 
         [JsonPropertyName("matching_rules")]
-        public List<MatchingRule>? MatchingRules { get; init; }
+        public List<MatchingRule>? MatchingRules { get; set; }
     }
 }

@@ -6,6 +6,6 @@ namespace LinqToTwitter
     public class BlockingResponse
     {
         [JsonPropertyName("data")]
-        public BlockingResponseData? Data { get; init; }
+        public BlockingResponseData? Data { get; set; }
     }
 }

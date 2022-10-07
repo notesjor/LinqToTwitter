@@ -6,6 +6,6 @@ namespace LinqToTwitter
     public class AddStreamingFilterRules
     {
         [JsonPropertyName("add")]
-        public List<StreamingAddRule>? Add { get; init; }
+        public List<StreamingAddRule>? Add { get; set; }
     }
 }
