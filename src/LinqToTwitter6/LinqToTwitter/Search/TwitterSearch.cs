@@ -11,7 +11,7 @@ namespace LinqToTwitter
     /// for performing Twitter searches
     /// </summary>
     [XmlType(Namespace = "LinqToTwitter")]
-    public record TwitterSearch
+    public class TwitterSearch
     {
         //
         // Input parameters

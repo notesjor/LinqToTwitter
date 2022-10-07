@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record SpaceResponseData
+    public class SpaceResponseData
     {
         [JsonPropertyName("muting")]
         public bool Muting { get; set; }

@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 namespace LinqToTwitter
 {
     [XmlType(Namespace = "LinqToTwitter")]
-    public record Mute
+    public class Mute
     {
         //
         // Input parameters

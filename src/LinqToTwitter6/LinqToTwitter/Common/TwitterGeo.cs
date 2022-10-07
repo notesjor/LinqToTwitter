@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter.Common
 {
-    public record TwitterGeo
+    public class TwitterGeo
     {
         [JsonPropertyName("type")]
         public string? Type { get; init; }

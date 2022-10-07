@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record TwitterUserFollowResponseData
+    public class TwitterUserFollowResponseData
     {
         [JsonPropertyName("following")]
         public bool Following { get; set; }

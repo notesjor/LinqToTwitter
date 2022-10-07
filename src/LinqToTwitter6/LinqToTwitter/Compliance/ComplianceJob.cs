@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Compliance Job details
     /// </summary>
-    public record ComplianceJob
+    public class ComplianceJob
     {
         /// <summary>
         /// Unique ID for job

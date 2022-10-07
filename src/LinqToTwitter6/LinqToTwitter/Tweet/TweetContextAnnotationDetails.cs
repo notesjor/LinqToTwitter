@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Details for the Tweet context annotation domains and entities
     /// </summary>
-    public record TweetContextAnnotationDetails
+    public class TweetContextAnnotationDetails
     {
         /// <summary>
         /// Annotation ID

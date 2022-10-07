@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Metrics available to the public
     /// </summary>
-    public record TweetPublicMetrics
+    public class TweetPublicMetrics
     {
         /// <summary>
         /// Number of retweets

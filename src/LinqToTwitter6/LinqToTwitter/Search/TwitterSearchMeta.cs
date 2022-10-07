@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Metadata for <see cref="TwitterSearch"/> query results
     /// </summary>
-    public record TwitterSearchMeta
+    public class TwitterSearchMeta
     {
         /// <summary>
         /// Most recent ID in the data

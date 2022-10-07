@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Entities associated with a tweet
     /// </summary>
-    public record TweetEntities
+    public class TweetEntities
     {
         /// <summary>
         /// Annotation entities

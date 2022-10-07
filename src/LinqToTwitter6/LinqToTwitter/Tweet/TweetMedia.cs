@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// For tweeting uploaded media
     /// </summary>
-    public record TweetMedia
+    public class TweetMedia
     {
         /// <summary>
         /// IDs of uploaded media

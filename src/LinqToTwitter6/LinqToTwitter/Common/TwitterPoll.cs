@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter.Common
 {
-    public record TwitterPoll
+    public class TwitterPoll
     {
         /// <summary>
         /// Number of minutes to run poll

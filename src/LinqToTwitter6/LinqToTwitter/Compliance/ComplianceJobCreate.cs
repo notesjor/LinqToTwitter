@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter.Compliance
 {
-    public record ComplianceJobCreate
+    public class ComplianceJobCreate
     {
         [JsonPropertyName("type")]
         public string? Type { get; set; }

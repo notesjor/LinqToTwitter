@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record TwitterBlocksQuery
+    public class TwitterBlocksQuery
     {
         //
         // Input parameters

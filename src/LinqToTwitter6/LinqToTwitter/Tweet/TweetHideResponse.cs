@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record TweetHideResponse
+    public class TweetHideResponse
     {
         [JsonPropertyName("data")]
         public TweetHidden? Data { get; init; }

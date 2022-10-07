@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Response from either adding or deleting rules
     /// </summary>
-    public record StreamingMetaSummary
+    public class StreamingMetaSummary
     {
         /// <summary>
         /// Number of rules created

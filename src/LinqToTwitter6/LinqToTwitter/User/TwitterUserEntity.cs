@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Entities associated with a user
     /// </summary>
-    public record TwitterUserEntity
+    public class TwitterUserEntity
     {
         /// <summary>
         /// Entities from user profile URL

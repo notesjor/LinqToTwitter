@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Describes a place, like a city or point of interest
     /// </summary>
-    public record TwitterPlace
+    public class TwitterPlace
     {
         /// <summary>
         /// IDs of places containing this place

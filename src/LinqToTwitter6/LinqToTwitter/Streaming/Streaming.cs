@@ -11,7 +11,7 @@ namespace LinqToTwitter
     /// Reference to stream, details, and controls
     /// </summary>
     [XmlType(Namespace = "LinqToTwitter")]
-    public record Streaming
+    public class Streaming
     {
         /// <summary>
         /// Stream method

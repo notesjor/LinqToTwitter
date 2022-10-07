@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record StreamingMeta
+    public class StreamingMeta
     {
         /// <summary>
         /// Twitter server time when the request was sent

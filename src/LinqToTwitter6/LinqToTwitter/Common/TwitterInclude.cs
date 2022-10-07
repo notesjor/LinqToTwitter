@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter.Common
 {
-    public record TwitterInclude
+    public class TwitterInclude
     {
         [JsonPropertyName("users")]
         public List<TwitterUser>? Users { get; init; }

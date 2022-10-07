@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Request data for replying to a tweet
     /// </summary>
-    public record TweetReply
+    public class TweetReply
     {
         /// <summary>
         /// ID of tweet being replied to

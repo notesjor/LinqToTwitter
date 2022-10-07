@@ -5,7 +5,7 @@ namespace LinqToTwitter.Common
     /// <summary>
     /// Represents a Media object, such as gif, photo, or video
     /// </summary>
-    public record TwitterMedia
+    public class TwitterMedia
     {
         /// <summary>
         /// Alt text to display with an image

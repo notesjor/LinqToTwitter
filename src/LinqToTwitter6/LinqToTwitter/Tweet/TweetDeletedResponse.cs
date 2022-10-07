@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record TweetDeletedResponse
+    public class TweetDeletedResponse
     {
         [JsonPropertyName("data")]
         public TweetDeleted? Data { get; init; }

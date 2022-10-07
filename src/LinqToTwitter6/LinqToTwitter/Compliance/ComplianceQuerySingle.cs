@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record ComplianceQuerySingle
+    public class ComplianceQuerySingle
     {
         //
         // Query input fields

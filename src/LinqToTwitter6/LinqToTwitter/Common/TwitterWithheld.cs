@@ -1,6 +1,6 @@
 ﻿namespace LinqToTwitter.Common
 {
-    public record TwitterWithheld
+    public class TwitterWithheld
     {
     }
 }

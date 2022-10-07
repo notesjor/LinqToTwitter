@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Entity URL details
     /// </summary>
-    public record TweetEntityUrl
+    public class TweetEntityUrl
     {
         /// <summary>
         /// From Twitter Card description (in HTML header)

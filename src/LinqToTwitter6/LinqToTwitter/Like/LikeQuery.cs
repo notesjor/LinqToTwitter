@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record LikeQuery
+    public class LikeQuery
     {
         //
         // Input parameters

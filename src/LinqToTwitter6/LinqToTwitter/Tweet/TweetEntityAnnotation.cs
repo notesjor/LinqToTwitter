@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Represents an annotation entity
     /// </summary>
-    public record TweetEntityAnnotation
+    public class TweetEntityAnnotation
     {
         /// <summary>
         /// Start of annotation text

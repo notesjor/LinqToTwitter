@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record BlockingResponseData
+    public class BlockingResponseData
     {
         [JsonPropertyName("blocking")]
         public bool Blocking { get; set; }

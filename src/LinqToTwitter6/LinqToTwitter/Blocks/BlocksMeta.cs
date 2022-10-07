@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record BlocksMeta
+    public class BlocksMeta
     {
         [JsonPropertyName("result_count")]
         public int ResultCount { get; set; }

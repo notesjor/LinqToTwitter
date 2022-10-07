@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record StreamTweet
+    public class StreamTweet
     {
         [JsonPropertyName("data")]
         public Tweet? Tweet { get; init; }

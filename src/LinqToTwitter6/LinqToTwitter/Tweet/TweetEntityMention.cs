@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Represents a mention entity
     /// </summary>
-    public record TweetEntityMention
+    public class TweetEntityMention
     {
         /// <summary>
         /// End of mention

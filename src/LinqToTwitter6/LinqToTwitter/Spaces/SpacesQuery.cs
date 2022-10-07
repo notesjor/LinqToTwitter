@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record SpacesQuery
+    public class SpacesQuery
     {
         //
         // Input parameters

@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record ListFollowOrPinRequest
+    public class ListFollowOrPinRequest
     {
         [JsonPropertyName("list_id")]
         public string? ListID { get; set; }

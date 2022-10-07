@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Type of attachment in a tweet
     /// </summary>
-    public record TweetAttachments
+    public class TweetAttachments
     {
         /// <summary>
         /// Poll IDs

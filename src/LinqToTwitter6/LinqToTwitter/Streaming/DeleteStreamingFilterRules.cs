@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record DeleteStreamingFilterRules
+    public class DeleteStreamingFilterRules
     {
         [JsonPropertyName("delete")]
         public DeleteIds? Delete { get; init; }

@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record TweetQuery
+    public class TweetQuery
     {
         //
         // Query input fields

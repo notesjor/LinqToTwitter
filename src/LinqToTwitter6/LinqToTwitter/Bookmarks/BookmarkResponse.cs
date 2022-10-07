@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter
 {
-    public record BookmarkResponse
+    public class BookmarkResponse
     {
         [JsonPropertyName("data")]
         public TweetBookmarked? Data { get; init; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LinqToTwitter
 {
-    public record Counts
+    public class Counts
     {
         //
         // Input parameters

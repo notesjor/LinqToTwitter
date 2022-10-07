@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Public metrics for a user
     /// </summary>
-    public record TwitterUserPublicMetrics
+    public class TwitterUserPublicMetrics
     {
         /// <summary>
         /// Number of people following the user

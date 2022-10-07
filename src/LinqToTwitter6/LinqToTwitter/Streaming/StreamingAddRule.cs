@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// New rule on filter stream
     /// </summary>
-    public record StreamingAddRule
+    public class StreamingAddRule
     {
         /// <summary>
         /// Rule text

@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Represents a hashtag entity
     /// </summary>
-    public record TweetEntityHashtag
+    public class TweetEntityHashtag
     {
         /// <summary>
         /// Start of hashtag

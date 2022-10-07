@@ -7,7 +7,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Request and Response for List queries
     /// </summary>
-    public record ListQuery
+    public class ListQuery
     {
         //
         // These are the available input parameters, depending on query type

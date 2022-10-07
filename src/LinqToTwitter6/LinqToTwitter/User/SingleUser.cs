@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record SingleUser
+    public class SingleUser
     {
         //
         // Output results

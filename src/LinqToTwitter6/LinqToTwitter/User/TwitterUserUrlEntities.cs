@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record TwitterUserUrlEntities
+    public class TwitterUserUrlEntities
     {
         /// <summary>
         /// Collection of URLs attached to Tweet

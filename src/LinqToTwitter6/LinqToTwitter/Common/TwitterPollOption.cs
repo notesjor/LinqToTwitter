@@ -2,7 +2,7 @@
 
 namespace LinqToTwitter.Common
 {
-    public record TwitterPollOption
+    public class TwitterPollOption
     {
         [JsonPropertyName("position")]
         public int Position { get; set; }

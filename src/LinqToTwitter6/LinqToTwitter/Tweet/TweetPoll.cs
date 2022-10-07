@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Request data for Creating a Poll
     /// </summary>
-    public record TweetPoll
+    public class TweetPoll
     {
         /// <summary>
         /// Poll options

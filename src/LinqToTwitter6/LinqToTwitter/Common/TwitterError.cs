@@ -8,7 +8,7 @@ namespace LinqToTwitter.Common
     /// <remarks>
     /// Meaning of each property depends on type of query. Some will be null.
     /// </remarks>
-    public record TwitterError
+    public class TwitterError
     {
         [JsonPropertyName("resource_type")]
         public string? ResourceType { get; init; }

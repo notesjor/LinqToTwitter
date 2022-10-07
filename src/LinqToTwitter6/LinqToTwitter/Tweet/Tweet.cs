@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record Tweet
+    public class Tweet
     {
         /// <summary>
         /// Attachments, such as polls, images, and videos

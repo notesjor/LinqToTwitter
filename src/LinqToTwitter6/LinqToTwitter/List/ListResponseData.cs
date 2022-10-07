@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record ListResponseData
+    public class ListResponseData
     {
         /// <summary>
         /// When created

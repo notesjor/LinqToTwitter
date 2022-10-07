@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 namespace LinqToTwitter
 {
     [XmlType(Namespace = "LinqToTwitter")]
-    public record Space
+    public class Space
     {
         [JsonPropertyName("creator_id")]
         public string? CreatorID { get; set; }

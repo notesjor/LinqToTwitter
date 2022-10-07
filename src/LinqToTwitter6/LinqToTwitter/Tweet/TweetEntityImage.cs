@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Tweet image details
     /// </summary>
-    public record TweetEntityImage
+    public class TweetEntityImage
     {
         /// <summary>
         /// Image height

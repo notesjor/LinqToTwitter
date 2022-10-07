@@ -6,7 +6,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Represents a Twitter User.
     /// </summary>
-    public record TwitterUser
+    public class TwitterUser
     {
         /// <summary>
         /// Date the user signed up for Twitter

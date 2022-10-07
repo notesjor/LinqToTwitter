@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Geographical location of tweet
     /// </summary>
-    public record TweetGeo
+    public class TweetGeo
     {
         /// <summary>
         /// Place ID for location of tweet

@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record CountRange
+    public class CountRange
     {
         [JsonPropertyName("end")]
         public DateTime End { get; set; }

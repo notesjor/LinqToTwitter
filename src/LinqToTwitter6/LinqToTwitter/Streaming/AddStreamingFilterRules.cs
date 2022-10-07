@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace LinqToTwitter
 {
-    public record AddStreamingFilterRules
+    public class AddStreamingFilterRules
     {
         [JsonPropertyName("add")]
         public List<StreamingAddRule>? Add { get; init; }

@@ -1,6 +1,6 @@
 ﻿namespace LinqToTwitter.Common
 {
-    public record TwitterProperties
+    public class TwitterProperties
     {
     }
 }

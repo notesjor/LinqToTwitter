@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// Request parameters for posting a tweet
     /// </summary>
-    public record TweetRequest
+    public class TweetRequest
     {
         /// <summary>
         /// Deep link to a direct message, e.g. https://twitter.com/messages/compose?recipient_id=2244994945

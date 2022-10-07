@@ -5,7 +5,7 @@ namespace LinqToTwitter
     /// <summary>
     /// References a tweet
     /// </summary>
-    public record TweetReference
+    public class TweetReference
     {
         /// <summary>
         /// What kind of reference. e.g. reply, quote, retweet etc.
