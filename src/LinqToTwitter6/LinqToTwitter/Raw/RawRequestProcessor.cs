@@ -108,7 +108,6 @@ namespace LinqToTwitter
             return rawList.OfType<T>().ToList();
         }
 
-        [return: MaybeNull]
         public T ProcessActionResult(string responseJson, Enum theAction)
         {
             var raw = new Raw

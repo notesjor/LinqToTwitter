@@ -251,7 +251,7 @@ namespace LinqToTwitter
                     UserFields = UserFields
                 };
             else
-                return blocks with
+                return new LikeQuery
                 {
                     Type = Type,
                     ID = ID,

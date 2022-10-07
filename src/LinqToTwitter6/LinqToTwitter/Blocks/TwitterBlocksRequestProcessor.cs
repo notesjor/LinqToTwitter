@@ -213,7 +213,7 @@ namespace LinqToTwitter
                     UserFields = UserFields
                 };
             else
-                return blocks with
+                return new TwitterBlocksQuery
                 {
                     Type = Type,
                     ID = ID,

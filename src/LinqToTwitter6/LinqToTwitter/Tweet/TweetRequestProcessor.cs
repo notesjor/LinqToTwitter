@@ -586,7 +586,7 @@ namespace LinqToTwitter
                     UserFields = UserFields
                 };
             else
-                return tweet with
+                return new TweetQuery
                 {
                     Type = Type,
                     EndTime = EndTime,

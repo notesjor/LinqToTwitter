@@ -306,7 +306,7 @@ namespace LinqToTwitter
                     UserFields = UserFields
                 };
             else
-                return search with
+                return new TwitterSearch
                 {
                     Type = Type,
                     EndTime = EndTime,

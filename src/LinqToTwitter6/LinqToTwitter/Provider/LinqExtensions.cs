@@ -16,7 +16,6 @@ namespace LinqToTwitter.Provider
             yield return oneOff;
         }
 
-        [return: MaybeNull]
         public static TTo ItemCast<TFrom, TTo>(this TFrom item, TTo? defaultValue)
             where TTo: class
         {

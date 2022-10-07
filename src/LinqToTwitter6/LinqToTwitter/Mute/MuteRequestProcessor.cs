@@ -137,7 +137,7 @@ namespace LinqToTwitter
                     ID = ID,
                 };
             else
-                return mute with
+                return new Mute
                 {
                     Type = Type,
                     ID = ID

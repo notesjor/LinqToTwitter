@@ -108,7 +108,26 @@ namespace LinqToTwitter
             };
         }
 
-        record ParameterSpec(string ParamName, Action<string> Setter, bool ReplaceWhitespace);
+        class ParameterSpec
+        {
+          public ParameterSpec(string ParamName, Action<string> Setter, bool ReplaceWhitespace)
+          {
+            this.ParamName = ParamName;
+            this.Setter = Setter;
+            this.ReplaceWhitespace = ReplaceWhitespace;
+          }
+
+          public string ParamName { get; }
+          public Action<string> Setter { get; }
+          public bool ReplaceWhitespace { get; }
+
+          public void Deconstruct(out string ParamName, out Action<string> Setter, out bool ReplaceWhitespace)
+          {
+            ParamName = this.ParamName;
+            Setter = this.Setter;
+            ReplaceWhitespace = this.ReplaceWhitespace;
+          }
+        }
 
         /// <summary>
         /// Builds URL to retrieve a specified list.
@@ -368,7 +387,7 @@ namespace LinqToTwitter
                     UserID = UserID,
                 };
             else
-                return list with
+                return new ListQuery
                 {
                     Type = Type,
                     Expansions = Expansions,

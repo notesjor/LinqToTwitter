@@ -185,7 +185,7 @@ namespace LinqToTwitter
                     Status = Status
                 };
             else
-                return complianceQuery with
+                return new ComplianceQuery
                 {
                     Type = Type,
                     ID = ID,

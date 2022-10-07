@@ -609,7 +609,7 @@ namespace LinqToTwitter
                     Usernames = Usernames
                 };
             else
-                return user with
+                return new TwitterUserQuery
                 {
                     Type = Type,
                     ID = ID,

@@ -198,7 +198,7 @@ namespace LinqToTwitter.Provider
                 while (stream.CanRead && !IsStreamClosed)
                 {
                     readByte = new byte[1];
-                    await stream.ReadAsync(readByte.AsMemory(0, 1), CancellationToken).ConfigureAwait(false);
+                    await stream.ReadAsync(readByte, 0, 1, CancellationToken).ConfigureAwait(false);
                     byte nextByte = readByte.SingleOrDefault();
 
                     CancellationToken.ThrowIfCancellationRequested();
@@ -216,7 +216,7 @@ namespace LinqToTwitter.Provider
                         byte[] tweetBytes = new byte[byteCount];
 
                         memStr.Position = 0;
-                        await memStr.ReadAsync(tweetBytes.AsMemory(0, byteCount), CancellationToken).ConfigureAwait(false);
+                        await memStr.ReadAsync(tweetBytes, 0, byteCount, CancellationToken).ConfigureAwait(false);
 
                         string tweet = Encoding.UTF8.GetString(tweetBytes, 0, byteCount);
                         var strmContent = new StreamContent(this, tweet);

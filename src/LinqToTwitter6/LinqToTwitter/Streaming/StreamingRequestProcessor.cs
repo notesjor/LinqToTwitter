@@ -219,7 +219,7 @@ namespace LinqToTwitter
                     UserFields = UserFields
                 };
             else
-                return streaming with
+                return new Streaming
                 {
                     Type = Type,
                     Expansions = Expansions,

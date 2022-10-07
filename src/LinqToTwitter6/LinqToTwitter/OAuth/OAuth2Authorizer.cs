@@ -181,7 +181,7 @@ namespace LinqToTwitter.OAuth
             if (CredentialStore is not IOAuth2CredentialStore credStore)
                 throw new NullReferenceException(CredentialStoreMessage);
 
-            string scopes = string.Join(' ', credStore.Scopes ?? new string[0]);
+            string scopes = string.Join(" ", credStore.Scopes ?? new string[0]);
 
             credStore.CodeChallenge = GenerateCodeChallenge();
             string? hashedCodeChallenge = HashCodeChallenge(credStore.CodeChallenge);

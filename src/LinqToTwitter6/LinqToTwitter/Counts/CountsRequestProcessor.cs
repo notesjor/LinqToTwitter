@@ -202,7 +202,7 @@ namespace LinqToTwitter
             Counts? counts = JsonSerializer.Deserialize<Counts>(responseJson, options);
 
             if (counts == null)
-                return new Counts()
+                return new Counts
                 {
                     Type = Type,
                     EndTime = EndTime,
@@ -214,7 +214,7 @@ namespace LinqToTwitter
                     UntilID = UntilID,
                 };
             else
-                return counts with
+                return new Counts
                 {
                     Type = Type,
                     EndTime = EndTime,

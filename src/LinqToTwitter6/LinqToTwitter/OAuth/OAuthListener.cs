@@ -73,7 +73,8 @@ HTTP/1.1 200 OK
                         break;
                 }
 
-                stream.Write(Encoding.UTF8.GetBytes(responseHtml));
+                var buffer = Encoding.UTF8.GetBytes(responseHtml);
+                stream.Write(buffer, 0, buffer.Length);
 
                 return sb.ToString();
             }

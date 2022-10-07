@@ -57,7 +57,7 @@ namespace LinqToTwitter.Net
             throw new TwitterQueryException(message)
             {
                 HelpLink = L2TKeys.FaqHelpUrl,
-                StatusCode = HttpStatusCode.TooManyRequests,
+                StatusCode = (HttpStatusCode)429,
                 ReasonPhrase = msg.ReasonPhrase + " (HTTP 429 - Too Many Requests)",
                 Title = error.Title,
                 Details = error.Detail,

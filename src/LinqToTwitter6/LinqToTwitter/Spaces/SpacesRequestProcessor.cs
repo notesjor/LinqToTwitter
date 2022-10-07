@@ -300,7 +300,7 @@ namespace LinqToTwitter
                     UserFields = UserFields
                 };
             else
-                return space with
+                return new SpacesQuery
                 {
                     Type = Type,
                     Query = Query,
